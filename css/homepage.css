@@ -61,7 +61,7 @@ h1{
 
 .hp1{
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 90px;
     width: 60px;
 }
@@ -82,8 +82,8 @@ h1{
 
 /* FOOTER BLUE STRIP */
 footer{
-    background-color: #01ABDD;           /* the blue strip */
-    padding: 20px 15px;                   /* extra padding around buttons */
+    background-color: #01ABDD;
+    padding: 20px 15px;
     text-align: center;
 
     position: absolute;
@@ -100,9 +100,9 @@ footer{
 
 /* FOOTER BUTTONS STYLE */
 footer button{
-    width: 40%;                    /* fit nicely in footer */
-    margin: 0;                      /* spacing handled by gap */
-    padding: 12px;                  /* button padding */
+    width: 40%;
+    margin: 0;
+    padding: 12px;
     font-size: 16px;
     font-weight: 700;
     border-radius: 12px;
@@ -123,4 +123,35 @@ footer .map-btn{
 
 footer .search-btn{
     margin-left: -30px;
+}
+
+/* TEXT BOX */
+.text-box{
+    margin: 45px auto;
+    padding: 2px 15px 15px 15px;
+    width: 85%;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    background-color: #FFFCFC;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Headline */
+.text-box .headline{
+    font-size: 18px;
+    font-weight: 500;
+    color: #BE5F06;
+    margin-bottom: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Description */
+.text-box .description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
 }

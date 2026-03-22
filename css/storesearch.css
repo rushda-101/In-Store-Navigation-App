@@ -47,9 +47,36 @@ body{
     box-shadow: 0 -4px 10px rgba(86, 83, 83, 0.2);
 }
 
+/* MAP */
 #map{
     height: 200px;
     width: 90%;
     margin: 10px auto;
     border-radius: 10px;
+}
+
+/* SEARCH BAR */
+.search-bar{
+    text-align: center;
+    margin-top: 35px;
+}
+
+.search-bar input{
+    width: 65%;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+}
+
+.search-bar button{
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0796c1;
+    color: white;
+    font-weight: 600;
+}
+
+.search-bar button:hover{
+    transform: scale(1.05);
 }

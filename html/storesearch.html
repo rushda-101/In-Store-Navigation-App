@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Browser acts like a mobile device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Primark In-Store Navigation App</title>
@@ -16,19 +16,24 @@
 
 <div class="phone">
 
+    <!-- SEARCH BAR -->
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search location...">
         <button onclick="handleSearch()">Search</button>
     </div>
 
+    <!-- BOTTOM PANEL -->
     <div class="bottom-panel">
-        
+
         <div id="map"></div>
+
+        <!-- Store Info will be populated dynamically -->
+        <div id="store-details"></div>
 
     </div>
 
 </div>
 
 <script src="../js/storesearch.js"></script>
-
 </body>
+</html>

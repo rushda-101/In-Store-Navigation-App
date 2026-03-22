@@ -28,7 +28,7 @@ body{
 /* BOTTOM PANEL */
 .bottom-panel{
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
 
     width: 95%;
     left: 50%;
@@ -79,4 +79,45 @@ body{
 
 .search-bar button:hover{
     transform: scale(1.05);
+}
+
+/* STORE INFO */
+#store-details{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.store-info{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3px 12px;
+    margin: 8px 0;
+    text-align: left;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.store-info .store-name{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: relative;
+    top: -6px;
+}
+
+.store-info .store-distance,
+.store-info .store-address{
+    font-size: 14px;
+    margin: 2px 0;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: -4px;
+}
+
+.nearby-stores h3{
+    font-size: 15px;
+    margin: 15px 0 5px 0;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
 }

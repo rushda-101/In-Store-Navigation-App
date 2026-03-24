@@ -19,7 +19,10 @@
     </header>
 
     <!-- PRODUCT BOX -->
-    <div class="main-box"></div>
+    <div class="main-box">
+        <!-- PRODUCTS GRID -->
+         <div class="products-grid" id="productsGrid"></div>
+    </div>
 
     <!-- DEPARTMENTS TITLE -->
     <div class="departments-title">Departments</div>
@@ -32,12 +35,12 @@
 
         <!-- Scrollable departments bar -->
         <div class="departments-bar" id="deptScroll">
-            <button>Womens</button>
-            <button>Mens</button>
-            <button>Kids</button>
-            <button>Babys</button>
-            <button>Home</button>
-            <button>Beauty</button>
+            <button onclick="loadProducts('Womens')">Womens</button>
+            <button onclick="loadProducts('Mens')">Mens</button>
+            <button onclick="loadProducts('Kids')">Kids</button>
+            <button onclick="loadProducts('Babys')">Babys</button>
+            <button onclick="loadProducts('Home')">Home</button>
+            <button onclick="loadProducts('Beauty')">Beauty</button>
         </div>
 
         <!-- Right arrow -->

@@ -1,13 +1,9 @@
-function scrollLeft(){
-    document.getElementById("deptScroll").scrollBy({
-        left: -200,
-        behavior: "smooth"
-    });
+function scrollBarLeft(){
+    const container = document.getElementById("deptScroll");
+    container.scrollLeft -= 150;
 }
 
-function scrollRight(){
-    document.getElementById("deptScroll").scrollBy({
-        left: 200,
-        behavior: "smooth"
-    });
+function scrollBarRight(){
+    const container = document.getElementById("deptScroll");
+    container.scrollLeft += 150;
 }

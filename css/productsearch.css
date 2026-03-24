@@ -80,10 +80,10 @@ h1{
 /* WRAPPER (scrollable bar + arrows) */
 .departments-wrapper{
     position: absolute;
-    top: 120px;               /* same vertical position */
+    top: 120px;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;               /* same width as main box */
+    width: 90%;
     
     display: flex;
     align-items: center;
@@ -100,12 +100,17 @@ h1{
     scroll-behavior: smooth;
 
     height: 60px;
-    padding: 0 15px;           /* space inside bar for buttons */
+
+    white-space: nowrap;
+
+    padding: 0 15px;
+    padding-left: 45px;
+    padding-right: 45px;
     
     background-color: #FFFFFF;
     border-radius: 20px;
 
-    flex: 1;                    /* fills width of wrapper */
+    flex: 1;
     margin: 0;
 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -118,7 +123,7 @@ h1{
 
 /* BUTTONS INSIDE BAR */
 .departments-bar button{
-    min-width: 80px;
+    min-width: 55px;
     background: none;
     border: none;
     font-size: 14px;
@@ -135,8 +140,8 @@ h1{
 
 /* ARROWS INSIDE BAR */
 .arrow{
-    position: absolute;        /* sits on top of bar */
-    top: 50%;                  /* vertically centered */
+    position: absolute;
+    top: 50%;
     transform: translateY(-50%);
     background-color: white;
     border: none;
@@ -146,7 +151,7 @@ h1{
     cursor: pointer;
 
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 2;               /* stays above bar */
+    z-index: 2;
 }
 
 .arrow.left{

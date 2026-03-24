@@ -77,21 +77,21 @@ h1{
     text-shadow: 0 2px 4px rgba(0,0,0,0.7);
 }
 
-/* WRAPPER (arrows + scrollable bar) */
+/* WRAPPER (scrollable bar + arrows) */
 .departments-wrapper{
     position: absolute;
-    top: 110px;
+    top: 120px;               /* same vertical position */
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 90%;               /* same width as main box */
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 /* SCROLLABLE BAR */
 .departments-bar{
+    position: relative;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -100,12 +100,12 @@ h1{
     scroll-behavior: smooth;
 
     height: 60px;
-    padding: 0 15px;
+    padding: 0 15px;           /* space inside bar for buttons */
     
     background-color: #FFFFFF;
     border-radius: 20px;
 
-    flex: 1;
+    flex: 1;                    /* fills width of wrapper */
     margin: 0;
 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -133,8 +133,11 @@ h1{
     color: #01ABDD;
 }
 
-/* ARROWS */
+/* ARROWS INSIDE BAR */
 .arrow{
+    position: absolute;        /* sits on top of bar */
+    top: 50%;                  /* vertically centered */
+    transform: translateY(-50%);
     background-color: white;
     border: none;
     border-radius: 50%;
@@ -143,9 +146,17 @@ h1{
     cursor: pointer;
 
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    flex-shrink: 0;
+    z-index: 2;               /* stays above bar */
+}
+
+.arrow.left{
+    left: 5px;
+}
+
+.arrow.right{
+    right: 5px;
 }
 
 .arrow:hover{
-    transform: scale(1.1);
+    transform: translateY(-50%) scale(1.1);
 }

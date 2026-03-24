@@ -1,0 +1,151 @@
+/* BODY */
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #ddd;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* PHONE FRAME */
+.phone{
+    width: 375px;
+    height: 667px;
+    
+    background-image: url("../images/ps-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 25px;
+    overflow: hidden;
+
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+
+    position: relative;
+}
+
+/* HEADER */
+header{
+    color:white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+
+    padding: 25px 15px;
+    text-align: center;
+
+    margin: 0;
+}
+
+/* TITLE */
+h1{
+    margin: 0;
+}
+
+/* PRODUCT BOX */
+.main-box{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    height: 60%;
+
+    background-color: #FFFFFF;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* DEPARTMENTS TITLE */
+.departments-title{
+    position: absolute;
+    top: 80px;
+    left: 27%;
+    transform: translateX(-50%);
+
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+}
+
+/* WRAPPER (arrows + scrollable bar) */
+.departments-wrapper{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* SCROLLABLE BAR */
+.departments-bar{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    height: 60px;
+    padding: 0 15px;
+    
+    background-color: #FFFFFF;
+    border-radius: 20px;
+
+    flex: 1;
+    margin: 0;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* HIDE SCROLLBAR */
+.departments-bar::-webkit-scrollbar{
+    display: none;
+}
+
+/* BUTTONS INSIDE BAR */
+.departments-bar button{
+    min-width: 80px;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #39383883;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.departments-bar button:hover{
+    color: #01ABDD;
+}
+
+/* ARROWS */
+.arrow{
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+.arrow:hover{
+    transform: scale(1.1);
+}

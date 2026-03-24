@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Primark In-Store Navigation App</title>
+    <link rel="stylesheet" href="../css/productsearch.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+    <!-- HEADER -->
+    <header>
+        <h1>Product Search</h1>
+    </header>
+
+    <!-- PRODUCT BOX -->
+    <div class="main-box"></div>
+
+    <!-- DEPARTMENTS TITLE -->
+    <div class="departments-title">Departments</div>
+
+    <!-- DEPARTMENTS BAR WITH ARROWS -->
+    <div class="departments-wrapper">
+
+        <!-- Left arrow -->
+        <button class="arrow left" onclick="scrollLeft()">◀</button>
+
+        <!-- Scrollable departments bar -->
+        <div class="departments-bar" id="deptScroll">
+            <button>Womens</button>
+            <button>Mens</button>
+            <button>Kids</button>
+            <button>Babys</button>
+            <button>Home</button>
+            <button>Beauty</button>
+        </div>
+
+        <!-- Right arrow -->
+        <button class="arrow right" onclick="scrollRight()">▶</button>
+    </div>
+
+    <!-- PLACEHOLDER FOR PRODUCTS -->
+    <div class="container">
+        <div class="ps-images"></div>
+    </div>
+
+</div>
+
+<script src="../js/productsearch.js"></script>
+</body>
+</html>

@@ -26,18 +26,32 @@ const items = {
         { name: "Leggings", img: "../images/wleggings.png" },
     ],
     Mens: [
-        { name: "Shirts", img: "../images/shirts.png" },
-        { name: "Trousers", img: "../images/trousers.png" },
-        { name: "Shoes", img: "../images/mens-shoes.png" },
-        { name: "Hats", img: "../images/mens-hats.png" },
-        { name: "Accessories", img: "../images/mens-accessories.png" }
+        { name: "Shirts", img: "../images/mshirts.png" },
+        { name: "Trousers", img: "../images/mtrousers.png" },
+        { name: "Shoes", img: "../images/mshoes.png" },
+        { name: "Shorts", img: "../images/mshorts.png" },
+        { name: "Hats", img: "../images/mhats.png" },
+        { name: "Accessories", img: "../images/maccessories.png" },
+        { name: "Jeans", img: "../images/mjeans.png" },
+        { name: "Formal Wear", img: "../images/mformal.png" },
+        { name: "Bags", img: "../images/mbags.png" },
+        { name: "Men's Grooming", img: "../images/mgrooming.png" },
+        { name: "Gym-Wear", img: "../images/mgymwear.png" },
+        { name: "Pyjamas", img: "../images/mpyjamas.png" },
     ],
     Kids: [
-        { name: "Tops", img: "../images/kids-tops.png" },
-        { name: "Bottoms", img: "../images/kids-bottoms.png" },
-        { name: "Shoes", img: "../images/kids-shoes.png" },
-        { name: "Dresses", img: "../images/kids-dresses.png" }
-        // add more as needed
+        { name: "Girls Dresses", img: "../images/gdresses.png" },
+        { name: "Girls Coats", img: "../images/gcoats.png" },
+        { name: "Girls Trousers", img: "../images/gtrousers.png" },
+        { name: "Girls Shoes", img: "../images/gshoes.png" },
+        { name: "Girls Pyjamas", img: "../images/gpyjamas.png" },
+        { name: "Toys", img: "../images/ktoys.png" },
+        { name: "Stationary", img: "../images/kstationary.png" },
+        { name: "Boys Dresses", img: "../images/bdresses.png" },
+        { name: "Boys Coats", img: "../images/bcoats.png" },
+        { name: "Boys Trousers", img: "../images/btrousers.png" },
+        { name: "Boys Shoes", img: "../images/bshoes.png" },
+        { name: "Boys Pyjamas", img: "../images/bpyjamas.png" }
     ],
     Babys: [
         { name: "Bodysuits", img: "../images/bodysuits.png" },
@@ -55,27 +69,32 @@ const items = {
 
 // FUNCTION TO LOAD CATEGORY
 function loadCategory(category) {
-    const container = document.querySelector(".products-grid");
-    container.innerHTML = ""; // clear previous items
+    const container = document.getElementById("productsGrid");
+    container.innerHTML = "";
 
-    if (!items[category]) return; // safety check
+    if (!items[category]) return;
 
-    items[category].forEach(item => {
+    const categoryItems = items[category];
+
+    // Loop through 12 slots (3x4 grid)
+    for (let i = 0; i < 12; i++) {
         const div = document.createElement("div");
         div.classList.add("product-item");
 
-        div.innerHTML = `
-            <img src="${item.img}" alt="${item.name}">
-            <p>${item.name}</p>
-        `;
+        if (categoryItems[i]) {
+            // real item
+            div.innerHTML = `
+                <img src="${categoryItems[i].img}" alt="${categoryItems[i].name}">
+                <p>${categoryItems[i].name}</p>
+            `;
+        } else {
+            // empty placeholder (keeps layout perfect)
+            div.innerHTML = `
+                <img src="" style="visibility:hidden;">
+                <p style="visibility:hidden;">empty</p>
+            `;
+        }
 
         container.appendChild(div);
-    });
+    }
 }
-
-// ATTACH BUTTON CLICK EVENTS
-document.querySelectorAll(".departments-bar button").forEach(btn => {
-    btn.addEventListener("click", () => {
-        loadCategory(btn.textContent); // loads correct category
-    });
-});

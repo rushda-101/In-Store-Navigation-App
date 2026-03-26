@@ -83,8 +83,18 @@ const items = {
         { name: "Tech", img: "../images/htech.png" }
     ],
     Beauty: [
-        { name: "Makeup", img: "../images/makeup.png" },
-        { name: "Skincare", img: "../images/skincare.png" }
+        { name: "Foundation", img: "../images/mfoundation.png" },
+        { name: "Concealer", img: "../images/mconcealer.png" },
+        { name: "Eyeliner", img: "../images/meyeliner.png" },
+        { name: "Mascara", img: "../images/mmascara.png" },
+        { name: "Lipstick", img: "../images/mlipstick.png" },
+        { name: "Make-up Tools", img: "../images/mmtools.png" },
+        { name: "Nails", img: "../images/mnails.png" },
+        { name: "Skincare", img: "../images/mskincare.png" },
+        { name: "Face Masks", img: "../images/mfmasks.png" },
+        { name: "Hair", img: "../images/mhair.png" },
+        { name: "Bath & Body", img: "../images/mbathbody.png" },
+        { name: "Fragrance", img: "../images/mfragrance.png" }
     ]
 };
 

@@ -56,6 +56,16 @@ const items = {
     Babys: [
         { name: "Girls Dresses", img: "../images/bgdresses.png" },
         { name: "Girls Sets", img: "../images/bgsets.png" },
+        { name: "Girls Leggings", img: "../images/bgleggings.png" },
+        { name: "Girls Shoes", img: "../images/bgshoes.png" },
+        { name: "Blankets", img: "../images/bblankets.png" },
+        { name: "Toys", img: "../images/btoys.png" },
+        { name: "Towels", img: "../images/btowels.png" },
+        { name: "Feeding", img: "../images/bfeeding.png" },
+        { name: "Boys Tops", img: "../images/bbtops.png" },
+        { name: "Boys Sets", img: "../images/bbsets.png" },
+        { name: "Boys Shorts", img: "../images/bbshorts.png" },
+        { name: "Boys Shoes", img: "../images/bbshoes.png" },
 
     ],
     Home: [

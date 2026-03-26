@@ -69,8 +69,18 @@ const items = {
 
     ],
     Home: [
-        { name: "Bedding", img: "../images/bedding.png" },
-        { name: "Cushions", img: "../images/cushions.png" }
+        { name: "Bedding", img: "../images/hbedding.png" },
+        { name: "Plates", img: "../images/hplates.png" },
+        { name: "Mugs", img: "../images/hmugs.png" },
+        { name: "Lunch Bags", img: "../images/hlunchbags.png" },
+        { name: "Blankets", img: "../images/hblankets.png" },
+        { name: "Cushions", img: "../images/hcushions.png" },
+        { name: "Faux Plants", img: "../images/hplants.png" },
+        { name: "Furniture", img: "../images/hfurniture.png" },
+        { name: "Mirrors", img: "../images/hmirrors.png" },
+        { name: "Bathroom", img: "../images/hbathroom.png" },
+        { name: "Suitcases", img: "../images/hsuitcases.png" },
+        { name: "Tech", img: "../images/htech.png" }
     ],
     Beauty: [
         { name: "Makeup", img: "../images/makeup.png" },

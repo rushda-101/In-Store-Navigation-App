@@ -23,7 +23,7 @@ const items = {
         { name: "Pyjamas", img: "../images/wpyjamas.png" },
         { name: "Skirts", img: "../images/wskirts.png" },
         { name: "Gym-Wear", img: "../images/wgymwear.png" },
-        { name: "Leggings", img: "../images/wleggings.png" },
+        { name: "Leggings", img: "../images/wleggings.png" }
     ],
     Mens: [
         { name: "Shirts", img: "../images/mshirts.png" },
@@ -37,25 +37,26 @@ const items = {
         { name: "Bags", img: "../images/mbags.png" },
         { name: "Men's Grooming", img: "../images/mgrooming.png" },
         { name: "Gym-Wear", img: "../images/mgymwear.png" },
-        { name: "Pyjamas", img: "../images/mpyjamas.png" },
+        { name: "Pyjamas", img: "../images/mpyjamas.png" }
     ],
     Kids: [
         { name: "Girls Dresses", img: "../images/gdresses.png" },
         { name: "Girls Coats", img: "../images/gcoats.png" },
         { name: "Girls Trousers", img: "../images/gtrousers.png" },
         { name: "Girls Shoes", img: "../images/gshoes.png" },
-        { name: "Girls Pyjamas", img: "../images/gpyjamas.png" },
+        { name: "Girls PJ's", img: "../images/gpyjamas.png" },
         { name: "Toys", img: "../images/ktoys.png" },
         { name: "Stationary", img: "../images/kstationary.png" },
-        { name: "Boys Dresses", img: "../images/bdresses.png" },
+        { name: "Boys Tops", img: "../images/btops.png" },
         { name: "Boys Coats", img: "../images/bcoats.png" },
         { name: "Boys Trousers", img: "../images/btrousers.png" },
         { name: "Boys Shoes", img: "../images/bshoes.png" },
-        { name: "Boys Pyjamas", img: "../images/bpyjamas.png" }
+        { name: "Boys PJ's", img: "../images/bpyjamas.png" }
     ],
     Babys: [
-        { name: "Bodysuits", img: "../images/bodysuits.png" },
-        { name: "Sleepwear", img: "../images/sleepwear.png" }
+        { name: "Girls Dresses", img: "../images/bgdresses.png" },
+        { name: "Girls Sets", img: "../images/bgsets.png" },
+
     ],
     Home: [
         { name: "Bedding", img: "../images/bedding.png" },

@@ -1,3 +1,8 @@
+window.onload = function () {
+    localStorage.removeItem("selectedProduct");
+};
+
+
 // SCROLL FUNCTIONS
 function scrollBarLeft() {
     const container = document.getElementById("deptScroll");
@@ -103,29 +108,56 @@ function loadCategory(category) {
     const container = document.getElementById("productsGrid");
     container.innerHTML = "";
 
-    if (!items[category]) return;
-
     const categoryItems = items[category];
 
-    // Loop through 12 slots (3x4 grid)
     for (let i = 0; i < 12; i++) {
         const div = document.createElement("div");
         div.classList.add("product-item");
 
         if (categoryItems[i]) {
-            // real item
             div.innerHTML = `
-                <img src="${categoryItems[i].img}" alt="${categoryItems[i].name}">
+                <img src="${categoryItems[i].img}">
                 <p>${categoryItems[i].name}</p>
             `;
-        } else {
-            // empty placeholder (keeps layout perfect)
-            div.innerHTML = `
-                <img src="" style="visibility:hidden;">
-                <p style="visibility:hidden;">empty</p>
-            `;
+
+            div.onclick = (e) => selectProduct(categoryItems[i].name, e);
         }
 
         container.appendChild(div);
+    }
+}
+
+// NAVIGATION CONTROL
+function checkAndGoToMap() {
+    const store = localStorage.getItem("selectedStore");
+    const product = localStorage.getItem("selectedProduct");
+
+    if (store && product) {
+        window.location.href = "storemap.html";
+    }
+}
+
+// PRODUCT SELECTION
+function selectProduct(productName, event) {
+    localStorage.setItem("selectedProduct", productName);
+
+    document.querySelectorAll(".product-item").forEach(item => {
+        item.classList.remove("selected");
+    });
+
+    event.currentTarget.classList.add("selected");
+
+    document.getElementById("continueBtn").style.display = "block";
+}
+
+// HANDLING NAVIGATION
+function handleContinue() {
+    const store = localStorage.getItem("selectedStore");
+    const product = localStorage.getItem("selectedProduct");
+
+    if (store && product) {
+        window.location.href = "storemap.html";
+    } else if (!store) {
+        window.location.href = "storesearch.html";
     }
 }

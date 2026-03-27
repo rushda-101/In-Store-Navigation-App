@@ -5,3 +5,5 @@ function goToMap() {
 function goToProductSearch(){
     window.location.href = "../html/productsearch.html";
 }
+
+localStorage.clear();

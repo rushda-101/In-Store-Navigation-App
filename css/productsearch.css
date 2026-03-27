@@ -205,3 +205,45 @@ h1{
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
 }
+
+.product-item{
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.product-item:hover{
+    transform: scale(1.05);
+    background-color: rgba(1, 171, 221, 0.1);
+    border-radius: 10px;
+}
+
+/* CLICKED / SELECTED */
+.product-item.selected{
+    border: 2px solid #01ABDD;
+    border-radius: 10px;
+    background-color: rgba(1, 171, 221, 0.15);
+}
+
+/* CONTINUE BUTTON */
+#continueBtn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+
+    background-color: #01ABDD;
+    color: white;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+#continueBtn:hover{
+    transform: translateX(-50%) scale(1.05);
+}

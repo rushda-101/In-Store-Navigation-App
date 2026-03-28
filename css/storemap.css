@@ -34,12 +34,37 @@ header{
     text-align: center;
 
     margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+    z-index: 2000;
 }
 
+header input#startDept {
+    width: 120px;
+    font-size: 12px;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+header input#startDept:focus {
+    border-color: #01ABDD;
+    box-shadow: 0 0 5px rgba(1, 171, 221, 0.5);
+}
+
+
 /* FOOTER BLUE STRIP */
-footer{
+footer {
     background-color: #01ABDD;
-    padding: 20px 15px;
+
+    padding: 8px; //
     text-align: center;
 
     position: absolute;
@@ -48,7 +73,7 @@ footer{
 
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
 
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -59,8 +84,8 @@ footer{
 /* ALL BOXES */
 #storeMap {
     position: absolute;
-    top: 80px;
-    bottom: 70px;
+    top: 110px;
+    bottom: 30px;
     left: 0;
     right: 0;
 
@@ -82,21 +107,6 @@ footer{
     text-align: center;
 }
 
-/* PATHS */
-.path {
-    background: #ffffff;
-    border: 1px dashed #bbb;
-}
-
-/* highlight + user */
-.highlight {
-    outline: 3px solid #01ABDD;
-}
-
-.you {
-    outline: 3px solid green;
-}
-
 /* FEATURES */
 .entrance { background: #4CAF50; color: white; }
 .exit { background: #F44336; color: white; }
@@ -111,3 +121,31 @@ footer{
 .babys { background: #C4C4C4; }
 .home { background: #E5E2E2; }
 .beauty { background: #C4C4C4; }
+
+/* ROUTE LINE */
+.route-line {
+    z-index: 1000;
+    pointer-events: none; /* prevent blocking clicks */
+}
+.highlight {
+    outline: 3px solid #01ABDD;
+}
+.you {
+    outline: 3px solid green;
+}
+
+/* QUIT NAVIGATION BUTTON */
+#quitNavBtn {
+    background-color: white;
+    color: #01ABDD;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#quitNavBtn:hover {
+    background-color: #f0f0f0;
+}
